@@ -40,7 +40,7 @@ public class Order implements Serializable{
 	private User client;
 	
 	@OneToMany(mappedBy = "id.order")
-	private Set<OrderItem> items = new HashSet<>();
+	private Set<OrderItem> items = new HashSet<>(); //Set é como list cria uma coleção de itens sem repetição do mesmo item
 	
 	
 	public Order() {
